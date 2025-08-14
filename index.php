@@ -12,7 +12,22 @@
         This is php my website. <br>
 
     </div>
-    
+
+    <?php
+
+    /*
+    and (&&)
+    or  (||)
+    xor (^)
+    not (!)
+    */
+
+    $a = 10;
+
+
+
+    ?>
+
 </body>
 
 </html>

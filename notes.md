@@ -95,5 +95,60 @@ operators in php
         echo "<br>";
 ```
 
-3. 
+3.  comparision operators : boolean datatypes
+ in php we have var_dump function. used to tell variable value and type.
+
+ ```
+    echo "the value of 5 == 4";
+    echo "<br>";
+    echo var_dump(5 === 4); // false
+    echo "<br>";
+
+    echo "the value of 5 > 4";
+    echo "<br>";
+    echo var_dump(5 > 4); // true
+    echo "<br>";
+
+    echo "the value of 5 < 4";
+    echo "<br>";
+    echo var_dump(5 < 4); // false
+    echo "<br>";
+
+    echo "the value of 5 <= 4";
+    echo "<br>";
+    echo var_dump(5 >= 4); // true
+    echo "<br>";
+
+    echo "the value of 5 >= 4";
+    echo "<br>";
+    echo var_dump(5 <= 4); // false
+    echo "<br>";
+
+    echo "the value of 5 != 4";
+    echo "<br>";
+    echo var_dump(5 != 4); // true
+    echo "<br>";
+```
+
+4.  Increment / decrement operator
+
+```
+    $var  = 10;
+
+    echo "value of var is : ";
+    echo $var;
+
+    echo "<br>";
+    echo $var++; // 10
+    echo "<br>";
+    echo $var--; // 11
+    echo "<br>";
+    echo ++$var; // 11
+    echo "<br>";
+    echo --$var; // 10
+```
+
+5. Logical operator.
+
+
 
