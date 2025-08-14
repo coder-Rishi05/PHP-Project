@@ -43,6 +43,57 @@ Variables in php are dynamic type means they change their type according to valu
 
 operators in php
 
+1. Airthmatic operators.
 ```
-echo $var + $kar; // sum of these two variables.
+        $a = 23;
+        $b = 67;
+
+        echo "the value of var a + b is : ";
+        echo $a + $b;
+        echo "<br>";
+
+        echo "the value of var a - b is : ";
+        echo $a - $b;
+        echo "<br>";
+
+        echo "the value of var a / b is : ";
+        echo $a / $b;
+        echo "<br>";
+
+        echo "the value of var a * b is : ";
+        echo $a * $b;
+        echo "<br>";
+
+        echo "the value of var a % b is : ";
+        echo $a % $b;
+        echo "<br>";
+
 ```
+
+2. Assignment operators.
+
+```
+        // = += -= *= /=
+
+        $a = 10;
+
+        $b = $a;
+
+        echo $b;
+        echo "<br>";
+        echo "b += 1 : ";
+        echo $b += 1;
+        echo "<br>";
+        echo "b /= 1 : ";
+        echo $b /= 2;
+        echo "<br>";
+        echo "b -= 1 : ";
+        echo $b -= 2;
+        echo "<br>";
+        echo "b *= 1 : ";
+        echo $b *= 2;
+        echo "<br>";
+```
+
+3. 
+

@@ -14,36 +14,9 @@
         <?php
 
 
+        echo "Comparision operators";
 
 
-        // Airthmatic operators.
-
-        $a = 23;
-        $b = 67;
-
-        echo "the value of var a + b is : ";
-        echo $a + $b;
-        echo "<br>";
-
-        echo "the value of var a - b is : ";
-        echo $a - $b;
-        echo "<br>";
-
-        echo "the value of var a / b is : ";
-        echo $a / $b;
-        echo "<br>";
-
-        echo "the value of var a * b is : ";
-        echo $a * $b;
-        echo "<br>";
-
-        echo "the value of var a % b is : ";
-        echo $a % $b;
-        echo "<br>";
-
-
-        // Assignment operators.
-        // Comparision operators.
         // Increment/ Decrement operators.
         // Logical operators.
         //  operators.
