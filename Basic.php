@@ -7,17 +7,12 @@
     <title>PHP Project</title>
 </head>
 
+
 <body>
     <div class="">
         This is php my website. <br>
-
     </div>
 
-    <?php
-    
-   
-
-    ?>
 
 </body>
 
