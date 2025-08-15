@@ -15,16 +15,18 @@
 
     <?php
 
-    /*
-    and (&&)
-    or  (||)
-    xor (^)
-    not (!)
-    */
+    // constant : we can define contant variable using define function.
 
-    $a = 10;
+    define("PI", 3.14);
 
 
+
+   
+    echo "<br>";
+    echo "Value of PI is ";
+    echo PI; // define variables dont need $ sign to print their value.
+
+    // echo PI3; will give error.
 
     ?>
 
