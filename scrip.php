@@ -24,11 +24,16 @@
     .container {
         max-width: 80%;
         background-color: grey;
-        height: 80vh;
         margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
     }
 
     h3 {
+        padding: 10px;
+        margin: 40px;
         text-align: center;
     }
 </style>
@@ -38,17 +43,32 @@
 
 
     <div class="container">
-
         <?php
+        $str = "This is string ";
+        echo $str;
+        echo "<br>";
 
-        echo "<h3> This is container </h3>";
+        $len = strlen($str);
+        echo "<br>";
+        echo "Length of the string is  : ";
+        echo $len;
 
-        $age = 20;
+        //  i can also use (.) for concatinating.
+        echo "<br>";
+        $newSt = "This is new string";
+        $len = strlen($newSt);
+        echo "The length is new string is : " . $len;
+        // (.) this for adding the two string.
+        echo "<br>";
+        echo "Number of words in string is : " . str_word_count($newSt);
+        echo "<br>";
+        echo "The reverse string is : " . strrev($newSt);
+        echo "<br>";
+        echo "The position of word n in string is : " . strpos($newSt, "n");
+        echo "<br>";
+        echo "The replaced word in string is : " . str_replace("new", "old", $newSt);
 
-        if ($age > 18) {
-            # code...
-            echo "you can vote";
-        } else  echo "you can't vote";
+
 
 
         ?>

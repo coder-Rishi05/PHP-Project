@@ -316,3 +316,142 @@ constant : we can define contant variable using define function.
 
      echo PI3; will give error.
 ```
+
+
+--- 
+
+
+### Conditions and array in PHP
+
+```
+
+        echo "<h3> This is container </h3>";
+
+        $age = 20;
+
+        if ($age > 18) {
+            # code...
+            echo "you can vote";
+        } else  echo "you can't vote";
+        echo "<br>";
+        // Array 
+
+        echo "Array in php : ";
+        echo "<br>";
+        $lang = array("python", "php", "java", "c", "c++", "js", "sql");
+
+        for ($i = 0; $i < count($lang); $i++) {
+
+            echo $lang[$i];
+            echo "<br>";
+        }
+
+        // array have count function to tell the length of the array : 
+
+```
+
+--- 
+
+### Loops in PHP
+
+1. for loop.
+2. ForEach loop.
+3. While loop.
+
+```
+
+        <div class="box1">
+            <?php
+
+            echo "<p>Loops in php</p>";
+
+            echo "1. While loops";
+            echo "<br>";
+            $a = 0;
+            while ($a <= 10) {
+                # code...
+                echo "<br>";
+                echo "Value of a is : ";
+                echo $a;
+                echo "<br>";
+                $a++;
+            }
+            echo "<br>";
+
+            echo "array accessing using while loop";
+
+            $numbers = array(1, 2, 3, 4, 5, 6, 7);
+            $a = 0;
+            while ($a < count($numbers)) {
+                echo "<br>";
+                echo $numbers[$a];
+                echo "<br>";
+                $a++;
+            }
+
+
+            ?>
+        </div>
+        <div class="box2">
+            <?php
+            echo "2. For loop in php ";
+            echo "<br>";
+
+            $lang = array("python", "php", "java", "c", "c++", "js", "sql");
+
+            for ($i = 0; $i < count($lang); $i++) {
+                echo "<br>";
+                echo $lang[$i];
+                echo "<br>";
+            }
+            echo "<br>";
+
+
+            echo "ForEach loop";
+            echo "<br>";
+
+            foreach ($numbers as $value) {
+
+                echo "The value is : ";
+                echo $value;
+                echo "<br>";
+            }
+
+            ?>
+
+        </div>
+
+
+```
+
+### Functions 
+
+```
+ <?php
+        echo "Functions in php";
+        echo "<br>";
+        function print1()
+        {
+            echo 5;
+        }
+        print1();
+        echo "<br>";
+        function num($val)
+        {
+            echo "<br>";
+            echo "Your val is ";
+            echo $val;
+        }
+
+        num(5);
+
+        ?>
+
+```
+
+# Strings
+
+```
+
+
+```
