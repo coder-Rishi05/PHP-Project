@@ -1,0 +1,5 @@
+<?php
+// connecting to mysql
+
+
+?>

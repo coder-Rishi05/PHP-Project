@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/72bbcc46-904f-45ec-86cc-82f7e250734b/web/IN-en-20250728-TRIFECTA-perspective_789cb57d-abed-479d-b2db-bab4a94cab9c_medium.jpg");
+  background-size: cover; /* Optional: Adjust background image size */
+  filter: grayscale(20%) brightness(100%); /* App
+}
+
+.container {
+  max-width: 80%;
+
+  padding: 2.2rem;
+  /* margin: 1.8rem; */
+  margin: auto;
+}
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.forms > h3,
+p {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 2rem;
+
+  color: white;
+}
+
+form {
+  margin-top: 4rem;
+  border-radius: 12px;
+  width: 40%;
+  background-color: rgba(5, 6, 6, 0.873);
+  /* margin: 2rem 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 2rem 2rem;
+}
+
+form > h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+form > input:nth-child(1) {
+  margin-top: 4rem;
+}
+
+form > input {
+  padding: 1.4rem 2rem;
+  border-radius: 4px;
+  outline: none;
+  height: 2rem;
+  width: 18rem;
+  font-size: 1.2rem;
+  background-color: rgba(8, 7, 7, 0.178);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.581);
+  font-family: " Google Sans Code ";
+}
+
+input::placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.581);
+}
+
+input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.641);
+  outline: 2px solid white;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(255, 75, 75);
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-family: "Poppins";
+}
+
+.btn:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+.suc{
+    color: green;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: black;
+}
