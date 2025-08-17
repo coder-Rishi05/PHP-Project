@@ -1,6 +1,10 @@
 <!--  connecting php to sql database using mysqli ( Making connection to databse ) -->
 <!-- mysqli extention and php databases -->
+
+
 <?php
+
+$insert = false;
 
 if (isset($_POST['name'])) {
     # code...
@@ -40,16 +44,17 @@ if (isset($_POST['name'])) {
 
     // echo $sql 
 
-     if ($con->query($sql) === TRUE) {
-        echo "Successfully inserted";
+    if ($con->query($sql) === true) {
+        // echo "Successfully inserted";
+        $insert = true;
     } else {
+        // $not_insert = true;
         echo "Error: " . $sql . "<br>" . $con->error;
     }
 
 
 
     $con->close();
-   
 };
 ?>
 
@@ -71,7 +76,14 @@ if (isset($_POST['name'])) {
         <div class="forms">
             <h3>Welcome to IIT Kharagpur US Trip form.</h3>
             <p>Enter your details to confirm participation in the trip. </p>
-            <p class="suc">Thanks for submit the form.</p>
+            <?php
+
+            if ($insert == true) {
+                # code...
+                echo "<p class='suc'>Thanks for submitting the form.</p>";
+            }
+
+            ?>
             <form action="index.php" method="post">
                 <h1>Sign In</h1>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
