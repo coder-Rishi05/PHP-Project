@@ -40,6 +40,15 @@ if (isset($_POST['name'])) {
 
     // echo $sql 
 
+     if ($con->query($sql) === TRUE) {
+        echo "Successfully inserted";
+    } else {
+        echo "Error: " . $sql . "<br>" . $con->error;
+    }
+
+
+
+    $con->close();
    
 };
 ?>
