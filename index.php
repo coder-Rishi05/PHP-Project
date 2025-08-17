@@ -4,28 +4,33 @@
 
 <?php
 
-$insert = false;
+$value_is = false;
 
 if (isset($_POST['name'])) {
     # code...
 
 
-
+    // set connection variables.
     $server = "localhost";
     $username = "root";
     $password = "";
 
+    // create database connection
     $con = mysqli_connect($server, $username, $password); // it should be in this format.
+
+
+    // check for connection success.
 
     if (!$con) {
         die("connecting to this databse failed due to" . mysqli_connect_error());
     }
 
-    echo "Succes connecting to the databse.";
+    // echo "Succes connecting to the databse.";
 
     // inserting values 
     // here name contain the name which we give in form.
 
+    // collect post variables
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
@@ -44,15 +49,18 @@ if (isset($_POST['name'])) {
 
     // echo $sql 
 
+    // excecute the query
+
     if ($con->query($sql) === true) {
         // echo "Successfully inserted";
-        $insert = true;
+        // flag for successfull insertion
+        $value_is = true;
     } else {
         // $not_insert = true;
         echo "Error: " . $sql . "<br>" . $con->error;
     }
 
-
+    // close the database connection
 
     $con->close();
 };
@@ -78,7 +86,7 @@ if (isset($_POST['name'])) {
             <p>Enter your details to confirm participation in the trip. </p>
             <?php
 
-            if ($insert == true) {
+            if ($value_is != true) {
                 # code...
                 echo "<p class='suc'>Thanks for submitting the form.</p>";
             }
