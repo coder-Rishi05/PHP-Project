@@ -5,7 +5,43 @@ client request for the website.
 
 server returns the response.
 
+
 ```
+### connecting php to mysqli ( Making connection to databse )
+
+<!--   -->
+  <!-- mysqli extention and php databases -->
+  ```
+<?php
+$server = "localhost";
+$username = "root";
+$password = "";
+
+$con = mysqli_connect($server, $username, $password); // it should be in this format.
+
+if (!$con) {
+    die("connecting to this databse failed due to" . mysqli_connect_error());
+}
+
+echo "Succes connecting to the databse.";
+
+```
+
+### <h1 style="color:red;" >Important</h1>
+
+<p style="color:aqua;" > So when i have inde.php file on my folder then the php will understand it as main file of my web page so it will load it by default on the server. ex: localhost/0 PHP PROJECT/  </p>
+
+<h2>I dont need to write here <a  href = "localhost/0 PHP PROJECT/index.php">localhost/0 PHP PROJECT/index.php </a></h2>
+
+<h3 style="color:yellow;" >
+
+ Where As if i have to access the file with other names like : index.html or page.html or page .php
+
+</h3>
+
+<h4 style="color:aqua;" >
+then it is compulsory to write their name in localhost src : localhost/0 PHP PROJECT/index.html
+</h4>
 
 ### Basics of php.
 
@@ -317,9 +353,7 @@ constant : we can define contant variable using define function.
      echo PI3; will give error.
 ```
 
-
---- 
-
+---
 
 ### Conditions and array in PHP
 
@@ -334,7 +368,7 @@ constant : we can define contant variable using define function.
             echo "you can vote";
         } else  echo "you can't vote";
         echo "<br>";
-        // Array 
+        // Array
 
         echo "Array in php : ";
         echo "<br>";
@@ -346,11 +380,11 @@ constant : we can define contant variable using define function.
             echo "<br>";
         }
 
-        // array have count function to tell the length of the array : 
+        // array have count function to tell the length of the array :
 
 ```
 
---- 
+---
 
 ### Loops in PHP
 
@@ -424,7 +458,7 @@ constant : we can define contant variable using define function.
 
 ```
 
-### Functions 
+### Functions
 
 ```
  <?php
