@@ -19,7 +19,28 @@ if (isset($_POST['name'])) {
 
     echo "Succes connecting to the databse.";
 
-    
+    // inserting values 
+    // here name contain the name which we give in form.
+
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+
+
+
+    // $sql = "INSERT INTO `trip1`.`trip1` ( `$name`, `$phone`, `$email`, `$gender`, `dt`) VALUES ( 'rishi', '1234567890', 'rishi@1399gamil.com', 'M', current_timestamp())";
+
+    // $sql = "INSERT INTO `form data`.`trip1` (name, phone, email, gender, dt) 
+    //     VALUES ('$name', '$phone', '$email', '$gender', current_timestamp())";
+
+    $sql = "INSERT INTO  `trip`.`tripdata` ( `name`, `number`, `email`, `gender`, `dt`)
+             VALUES ('$name', '$phone', '$email', '$gender', current_timestamp())";
+
+
+    // echo $sql 
+
+   
 };
 ?>
 
